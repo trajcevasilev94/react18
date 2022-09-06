@@ -32,7 +32,7 @@ const App = () => {
       plot: 'Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire\'s world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.',
       year:1977,
       imdbLink:'https://www.imdb.com/title/tt0076759/?ref_=nv_sr_srsg_9',
-      imageUrl: 'https://m.media-amazon.com/images/M/MV5BNzg4MjQxNTQtZmI5My00YjMwLWJlMjUtMmJlY2U2ZWFlNzY1XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg',
+      imageUrl:'https://m.media-amazon.com/images/M/MV5BNzg4MjQxNTQtZmI5My00YjMwLWJlMjUtMmJlY2U2ZWFlNzY1XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg',
       id: 3
     }
   ]);
@@ -50,8 +50,8 @@ const App = () => {
         {show && <LifecycleClassComponent incrementor={incrementor} />}
         {show && <LifecycleFuncComponent incrementor={incrementor}/>}
         <LogIn />
-        {/* <MoviesFunc movies={movies} handleClick={handleClick}/> */}
-        <MoviesClass movies={movies} handleClick={handleClick}/>
+        <MoviesFunc movies={movies} handleClick={handleClick}/>
+        {/* <MoviesClass movies={movies} handleClick={handleClick}/> */}
     </div>
   );
 }

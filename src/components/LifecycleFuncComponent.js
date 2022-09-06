@@ -1,22 +1,7 @@
-import { useEffect, useState } from "react";
-
+import { useState } from "react";
 
 export const LifecycleFuncComponent = ({ incrementor }) => {
-
     const [counter, setCounter] = useState(0);
-
-    //WRONG
-    // counter += 1
-
-    // empty array as dependency === componentDidMount
-    useEffect(() => {
-        console.log("LifecycleFuncComponent -> componentDidMount ");
-        return () => {
-            console.log("LifecycleFuncComponent -> componentWillUnmount ");
-        }
-    }, []);
-
-    console.log("LifecycleFuncComponent -> render ");
 
     const increment = () => {
         setCounter(count => (count + incrementor));
